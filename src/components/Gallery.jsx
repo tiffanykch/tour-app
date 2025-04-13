@@ -10,7 +10,7 @@ const Gallery = ({ tours, setTours, onRemove }) => {
     // Function to fetch tours from API
     const fetchTours = async () => {
         try {
-            const res = await fetch('https://course-api.com/react-tours-project');
+            const res = await fetch('https://api.allorigins.win/raw?url=https://course-api.com/react-tours-project');
 
             // Map API data to the fields we need
             const data = await res.json();
