@@ -1,5 +1,6 @@
 import React, {useState} from "react";
 import Gallery from "./components/Gallery";
+import "./styles/styles.css";
 
 // Root component of the app
 function App () {
@@ -13,7 +14,7 @@ function App () {
 
   return (
     <main>
-      <h1>Tours Explorer</h1>
+      <h1>Wanderer Tours</h1>
       
       {/* Pass state and handlers down to the Gallery component */}
       <Gallery tours={tours} setTours={setTours} onRemove={removeTour} />

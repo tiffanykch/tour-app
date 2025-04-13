@@ -8,13 +8,13 @@ const TourCard = ({id, name, info, price, image, onRemove}) => {
 
     return (
         <article className="tour-card">
-            <h3>{name}</h3>
-            <h5>{`$${price}`}</h5>
             <img src = {image} alt={name} />
+            <h3>{name}</h3>
+            <h4>{`$${price}`}</h4>
 
             <p>
                 {/* Show tour information if readMore is true, otherwise a slice */}
-                {readMore ? info : `${info.substring(0, 50)}...`}
+                {readMore ? info : `${info.substring(0, 100)}...`}
                 <button onClick={() => setReadMore(!readMore)}>
                     {/* Toggle button text */}
                     {readMore ? 'Show Less' : 'Read More'}

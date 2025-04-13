@@ -41,7 +41,7 @@ const Gallery = ({ tours, setTours, onRemove }) => {
 
     // Render error state
     if (error) {
-        return <h2>Oh no! Error fetching tours.</h2>;
+        return <h2>Oh no! Error fetching tours.</h2>
     }
 
     // Render if no tours remain
